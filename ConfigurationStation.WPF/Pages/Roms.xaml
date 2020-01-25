@@ -23,7 +23,7 @@
             <!--<TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding RomPath}" VerticalAlignment="Top" Width="433"/>-->
             <Button Content="Browse" Command="{Binding BrowseFolderCommand}" Height="23" Width="65" Margin="10,0,0,0"/>
         </StackPanel>
-        <ListView Grid.Row="3" ItemsSource="{Binding GameSystems}" SelectedItem="{Binding SelectedSystem, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Height="352" Margin="10,10,10,10" VerticalAlignment="Top" Width="780">
+        <ListView Grid.Row="3" ItemsSource="{Binding GameSystems}" SelectedItem="{Binding SelectedSystem, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Margin="10,10,10,10" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Full Name" Width="200" DisplayMemberBinding="{Binding Fullname}" />

@@ -575,13 +575,14 @@
 		<name>mupen64plus_next_gles3_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\mupen64plus_next_gles3_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>n64</platform>
 	</core>
 	<core>
 		<name>mupen64plus_next_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\mupen64plus_next_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<default>1</default>
+		<platform>n64</platform>
 	</core>
 	<core>
 		<name>nekop2_libretro</name>
@@ -630,7 +631,7 @@
 		<name>parallel_n64_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\parallel_n64_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>n64</platform>
 	</core>
 	<core>
 		<name>pcsx_rearmed_libretro</name>
@@ -868,6 +869,7 @@
 		<name>vice_x64_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\vice_x64_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
+		<default>1</default>
 		<platform>c64</platform>
 	</core>
 	<core>
