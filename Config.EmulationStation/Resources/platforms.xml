@@ -1,0 +1,102 @@
+<platforms>
+	<platform>
+		<fullname>Atari 800</fullname>
+		<name>atari800</name>
+	</platform>
+	<platform>
+		<fullname>Atari 2600</fullname>
+		<name>atari2600</name>
+	</platform>
+	<platform>
+		<fullname>Atari 5200</fullname>
+		<name>atari5200</name>
+	</platform>
+	<platform>
+		<fullname>Atari 7800</fullname>
+		<name>atari7800</name>
+	</platform>
+	<platform>
+		<fullname>Cave Story</fullname>
+		<name>cavestory</name>
+	</platform>
+	<platform>
+		<fullname>Commodore 64</fullname>
+		<name>c64</name>
+	</platform>
+	<platform>
+		<fullname>Nintendo Entertainment System</fullname>
+		<name>nes</name>
+	</platform>
+	<platform>
+		<fullname>Super Nintendo Entertainment System</fullname>
+		<name>snes</name>
+	</platform>
+	<platform>
+		<fullname>Nintendo 64</fullname>
+		<name>n64</name>
+	</platform>
+	<platform>
+		<fullname>Nintendo Gamecube</fullname>
+		<name>gc</name>
+	</platform>
+	<platform>
+		<fullname>Nintendo Wii</fullname>
+		<name>wii</name>
+	</platform>
+	<platform>
+		<fullname>Nintendo Gameboy</fullname>
+		<name>gb</name>
+	</platform>
+	<platform>
+		<fullname>Nintendo Gameboy Color</fullname>
+		<name>gbc</name>
+	</platform>
+	<platform>
+		<fullname>Nintendo Gameboy Advance</fullname>
+		<name>gba</name>
+	</platform>
+	<platform>
+		<fullname>Script Creation Utility for Maniac Mansion (SCUMM)</fullname>
+		<name>scummvm</name>
+	</platform>
+	<platform>
+		<fullname>Sega Master System</fullname>
+		<name>mastersystem</name>
+	</platform>
+	<platform>
+		<fullname>Sega Megadrive</fullname>
+		<name>megadrive</name>
+	</platform>
+	<platform>
+		<fullname>Sega 32x</fullname>
+		<name>sega32x</name>
+	</platform>
+	<platform>
+		<fullname>Sega CD</fullname>
+		<name>segacd</name>
+	</platform>
+	<platform>
+		<fullname>Sega Game Gear</fullname>
+		<name>gamegear</name>
+	</platform>
+	<platform>
+		<fullname>Sony Playstation</fullname>
+		<name>psx</name>
+	</platform>
+	<platform>
+		<fullname>Sony Playstation 2</fullname>
+		<name>ps2</name>
+	</platform>
+	<platform>
+		<fullname>Sony Playstation Portable</fullname>
+		<name>psp</name>
+	</platform>
+	<platform>
+		<fullname>Final Burn Alpha (Arcade)</fullname>
+		<name>fba_libretro</name>
+	</platform>
+	<platform>
+		<fullname>Multiple Arcade Machine Emulator (MAME)</fullname>
+		<name>mame</name>
+	</platform>
+</platforms>

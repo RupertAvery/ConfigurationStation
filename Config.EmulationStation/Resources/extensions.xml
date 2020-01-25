@@ -1,0 +1,59 @@
+<extensions>
+	<system>
+		<extension>.a26 .A26 .bin .BIN</extension>
+		<platform>atari2600</platform>
+	</system>
+	<system>
+		<extension>.nes .NES .zip .ZIP</extension>
+		<platform>nes</platform>
+	</system>
+	<system>
+		<extension>.sms .SMS .zip .ZIP</extension>
+		<platform>mastersystem</platform>
+	</system>
+	<system>
+		<extension>.gen .GEN .zip .ZIP</extension>
+		<platform>megadrive</platform>
+	</system>
+	<system>
+		<extension>.zip .ZIP</extension>
+		<platform>mame</platform>
+		<theme>mame</theme>
+	</system>
+	<system>
+		<extension>.smc .SMC .sfc .SFC .zip .ZIP</extension>
+		<platform>snes</platform>
+	</system>
+	<system>
+		<extension>.cue .CUE .nrg .NRG</extension>
+		<platform>saturn</platform>
+	</system>
+	<system>
+		<extension>.cue .CUE .bin .BIN .pbp .PBP .7z .7Z .img .IMG</extension>
+		<platform>psx</platform>
+	</system>
+	<system>
+		<extension>.v64 .V64 .n64 .N64 .z64 .Z64 .bin .BIN .zip .ZIP</extension>
+		<platform>n64</platform>
+	</system>
+	<system>
+		<extension>.GDI .gdi .CDI .cdi</extension>
+		<platform>dreamcast</platform>
+	</system>
+	<system>
+		<extension>.iso .ISO .zip .ZIP .elf .ELF .dol .DOL .wad .WAD .gcm .GCM</extension>
+		<platform>gc</platform>
+	</system>
+	<system>
+		<extension>.iso .ISO .mdf .MDF .nrg .NRG .bin .BIN .dump .DUMP</extension>
+		<platform>ps2</platform>
+	</system>
+	<system>
+		<extension>.iso .ISO .cso .CSO .pbp .PBP</extension>
+		<platform>psp</platform>
+	</system>
+	<system>
+	  <extension>.lnk .LNK</extension>
+	  <platform>pc</platform>
+	</system>
+</extensions>

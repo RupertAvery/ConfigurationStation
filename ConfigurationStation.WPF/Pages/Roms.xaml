@@ -1,0 +1,43 @@
+﻿<Page x:Class="ConfigurationStation.WPF.Pages.Roms"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ConfigurationStation.WPF.Pages"
+      DataContext="{Binding RelativeSource={RelativeSource Self}}"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Roms">
+
+    <Grid DataContext="{Binding Model}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23"/>
+            <RowDefinition Height="23"/>
+            <RowDefinition Height="23"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="23"/>
+        </Grid.RowDefinitions>
+        <RadioButton Grid.Row="0" IsChecked="{Binding IsESpath}" Content="Use a common path and append EmulationStation platforms" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
+        <RadioButton Grid.Row="1" IsChecked="{Binding IsCustomPath}" Content="Use custom paths for each system" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <!--<TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding RomPath}" VerticalAlignment="Top" Width="433"/>-->
+            <Button Content="Browse" Command="{Binding BrowseFolderCommand}" Height="23" Width="65" Margin="10,0,0,0"/>
+        </StackPanel>
+        <ListView Grid.Row="3" ItemsSource="{Binding GameSystems}" SelectedItem="{Binding SelectedSystem, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Height="352" Margin="10,10,10,10" VerticalAlignment="Top" Width="780">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Full Name" Width="200" DisplayMemberBinding="{Binding Fullname}" />
+                    <GridViewColumn Header="Path" Width="450" DisplayMemberBinding="{Binding Path}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid Grid.Row="5" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Systems" Command="{Binding SystemsCommand}" Height="23" Width="80" Margin="10,0,0,0" HorizontalAlignment="Left"/>
+            <Button Grid.Column="1" Content="Gennerate Configuration" Command="{Binding GenerateConfigCommand}" IsEnabled="{Binding CanGenerate}" Height="23" Width="160" Margin="10,0,0,0" HorizontalAlignment="Right"/>
+        </Grid>
+    </Grid>
+</Page>
