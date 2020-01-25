@@ -1,937 +1,946 @@
 <cores>
 	<core>
 		<name>3dengine_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\3dengine_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\3dengine_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>4do_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\4do_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\4do_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>81_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\81_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\81_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>2048_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\2048_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\2048_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>2048</platform>
 	</core>
 	<core>
 		<name>atari800_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\atari800_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\atari800_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>atari</platform>
 	</core>
 	<core>
 		<name>blastem_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\blastem_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\blastem_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>bluemsx_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\bluemsx_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\bluemsx_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>msx</platform>
 	</core>
 	<core>
 		<name>boom3_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\boom3_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\boom3_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>boom3_xp_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\boom3_xp_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\boom3_xp_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>bsnes2014_accuracy_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\bsnes2014_accuracy_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\bsnes2014_accuracy_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>bsnes2014_balanced_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\bsnes2014_balanced_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\bsnes2014_balanced_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>bsnes2014_performance_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\bsnes2014_performance_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\bsnes2014_performance_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>bsnes_cplusplus98_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\bsnes_cplusplus98_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\bsnes_cplusplus98_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>bsnes_hd_beta_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\bsnes_hd_beta_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\bsnes_hd_beta_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>bsnes_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\bsnes_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\bsnes_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>bsnes_mercury_accuracy_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\bsnes_mercury_accuracy_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\bsnes_mercury_accuracy_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>bsnes_mercury_balanced_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\bsnes_mercury_balanced_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\bsnes_mercury_balanced_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>bsnes_mercury_performance_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\bsnes_mercury_performance_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\bsnes_mercury_performance_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>cannonball_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\cannonball_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\cannonball_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>cap32_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\cap32_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\cap32_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>chailove_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\chailove_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\chailove_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>citra_canary_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\citra_canary_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\citra_canary_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>3ds</platform>
 	</core>
 	<core>
 		<name>citra_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\citra_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\citra_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>3ds</platform>
 	</core>
 	<core>
 		<name>craft_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\craft_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\craft_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>crocods_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\crocods_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\crocods_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>daphne_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\daphne_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\daphne_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>desmume2015_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\desmume2015_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\desmume2015_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>ds</platform>
 	</core>
 	<core>
 		<name>desmume_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\desmume_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\desmume_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>ds</platform>
 	</core>
 	<core>
 		<name>dhewm3_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\dhewm3_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\dhewm3_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>dhewm3_xp_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\dhewm3_xp_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\dhewm3_xp_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>dinothawr_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\dinothawr_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\dinothawr_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>dolphin_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\dolphin_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\dolphin_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>wii</platform>
 	</core>
 	<core>
 		<name>dolphin_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\dolphin_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\dolphin_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>gc</platform>
 	</core>
 	<core>
 		<name>dosbox_svn_ce_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\dosbox_svn_ce_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\dosbox_svn_ce_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>dos</platform>
 	</core>
 	<core>
 		<name>dosbox_svn_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\dosbox_svn_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\dosbox_svn_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>dos</platform>
 	</core>
 	<core>
 		<name>easyrpg_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\easyrpg_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\easyrpg_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>emux_chip8_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\emux_chip8_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\emux_chip8_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>chip8</platform>
 	</core>
 	<core>
 		<name>emux_gb_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\emux_gb_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\emux_gb_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>gb</platform>
 	</core>
 	<core>
 		<name>emux_nes_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\emux_nes_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\emux_nes_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>nes</platform>
 	</core>
 	<core>
 		<name>emux_sms_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\emux_sms_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\emux_sms_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>sms</platform>
 	</core>
 	<core>
 		<name>fbalpha2012_cps1_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\fbalpha2012_cps1_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\fbalpha2012_cps1_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>fba</platform>
 	</core>
 	<core>
 		<name>fbalpha2012_cps2_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\fbalpha2012_cps2_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\fbalpha2012_cps2_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>fba</platform>
 	</core>
 	<core>
 		<name>fbalpha2012_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\fbalpha2012_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\fbalpha2012_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>fba</platform>
 	</core>
 	<core>
 		<name>fbalpha2012_neogeo_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\fbalpha2012_neogeo_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\fbalpha2012_neogeo_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>fba</platform>
 	</core>
 	<core>
 		<name>fbneo_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\fbneo_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\fbneo_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>fba</platform>
 	</core>
 	<core>
 		<name>fceumm_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\fceumm_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\fceumm_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<default>1</default>
 		<platform>nes</platform>
 	</core>
 	<core>
 		<name>ffmpeg_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\ffmpeg_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\ffmpeg_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>ffmpeg</platform>
 	</core>
 	<core>
 		<name>flycast_gles2_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\flycast_gles2_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\flycast_gles2_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>flycast_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\flycast_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\flycast_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>fmsx_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\fmsx_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\fmsx_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>msx</platform>
 	</core>
 	<core>
 		<name>freechaf_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\freechaf_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\freechaf_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>freeintv_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\freeintv_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\freeintv_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>fuse_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\fuse_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\fuse_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>gambatte_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\gambatte_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\gambatte_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>gb</platform>
+	</core>
+	<core>
+		<name>gambatte_libretro</name>
+		<command>"{path}\{exe}" -L "{path}\cores\gambatte_libretro.dll" %ROM%</command>
+		<emulator>retroarch</emulator>
+		<platform>gbc</platform>
 	</core>
 	<core>
 		<name>gearboy_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\gearboy_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\gearboy_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>gearcore_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\gearcore_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\gearcore_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>genesis_plus_gx_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\genesis_plus_gx_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\genesis_plus_gx_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>gme_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\gme_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\gme_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>gpsp_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\gpsp_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\gpsp_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>gba</platform>
 	</core>
 	<core>
 		<name>gw_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\gw_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\gw_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>handy_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\handy_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\handy_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>hatari_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\hatari_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\hatari_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>higan_sfc_balanced_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\higan_sfc_balanced_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\higan_sfc_balanced_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>higan_sfc_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\higan_sfc_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\higan_sfc_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>imageviewer_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\imageviewer_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\imageviewer_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>kronos_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\kronos_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\kronos_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>lutro_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\lutro_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\lutro_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mame2000_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mame2000_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mame2000_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>mame</platform>
 	</core>
 	<core>
 		<name>mame2003_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mame2003_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mame2003_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>mame</platform>
 	</core>
 	<core>
 		<name>mame2003_plus_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mame2003_plus_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mame2003_plus_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>mame</platform>
 	</core>
 	<core>
 		<name>mame2010_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mame2010_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mame2010_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>mame</platform>
 	</core>
 	<core>
 		<name>mame2015_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mame2015_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mame2015_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>mame</platform>
 	</core>
 	<core>
 		<name>mame2016_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mame2016_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mame2016_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>mame</platform>
 	</core>
 	<core>
 		<name>mame_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mame_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mame_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<default>1</default>
+		<platform>mame</platform>
 	</core>
 	<core>
 		<name>mednafen_gba_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_gba_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_gba_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mednafen_lynx_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_lynx_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_lynx_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mednafen_ngp_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_ngp_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_ngp_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mednafen_pce_fast_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_pce_fast_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_pce_fast_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mednafen_pce_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_pce_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_pce_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mednafen_pcfx_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_pcfx_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_pcfx_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mednafen_psx_hw_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_psx_hw_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_psx_hw_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>psx</platform>
 	</core>
 	<core>
 		<name>mednafen_psx_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_psx_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_psx_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>psx</platform>
 	</core>
 	<core>
 		<name>mednafen_saturn_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_saturn_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_saturn_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mednafen_snes_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_snes_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_snes_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mednafen_supergrafx_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_supergrafx_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_supergrafx_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mednafen_vb_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_vb_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_vb_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mednafen_wswan_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mednafen_wswan_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mednafen_wswan_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>melonds_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\melonds_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\melonds_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mesen-s_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mesen-s_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mesen-s_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mesen_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mesen_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mesen_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mess2015_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mess2015_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mess2015_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mgba_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mgba_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mgba_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mrboom_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mrboom_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mrboom_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mu_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mu_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mu_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mupen64plus_next_gles3_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mupen64plus_next_gles3_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mupen64plus_next_gles3_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>mupen64plus_next_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\mupen64plus_next_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\mupen64plus_next_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>nekop2_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\nekop2_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\nekop2_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>neocd_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\neocd_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\neocd_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>nestopia_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\nestopia_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\nestopia_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>np2kai_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\np2kai_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\np2kai_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>nxengine_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\nxengine_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\nxengine_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<default>1</default>
+		<platform>cavestory</platform>
 	</core>
 	<core>
 		<name>o2em_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\o2em_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\o2em_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>openlara_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\openlara_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\openlara_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>parallel_n64_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\parallel_n64_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\parallel_n64_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>pcsx_rearmed_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\pcsx_rearmed_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\pcsx_rearmed_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<default>1</default>
 		<platform>psx</platform>
 	</core>
 	<core>
 		<name>picodrive_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\picodrive_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\picodrive_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>play_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\play_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\play_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>pocketcdg_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\pocketcdg_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\pocketcdg_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>pokemini_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\pokemini_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\pokemini_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>ppsspp_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\ppsspp_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\ppsspp_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<default>1</default>
-		<platform></platform>
+		<platform>psp</platform>
 	</core>
 	<core>
 		<name>prboom_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\prboom_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\prboom_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>procore_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\procore_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\procore_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>puae_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\puae_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\puae_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>px68k_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\px68k_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\px68k_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>quasi88_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\quasi88_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\quasi88_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>quicknes_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\quicknes_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\quicknes_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>race_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\race_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\race_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>redbook_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\redbook_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\redbook_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>reminiscence_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\reminiscence_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\reminiscence_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>remotejoy_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\remotejoy_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\remotejoy_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>sameboy_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\sameboy_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\sameboy_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>scummvm_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\scummvm_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\scummvm_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>smsplus_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\smsplus_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\smsplus_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>snes9x2002_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\snes9x2002_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\snes9x2002_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>snes9x2005_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\snes9x2005_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\snes9x2005_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>snes9x2005_plus_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\snes9x2005_plus_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\snes9x2005_plus_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>snes9x2010_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\snes9x2010_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\snes9x2010_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>snes9x_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\snes9x_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\snes9x_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<default>1</default>
 		<platform>snes</platform>
 	</core>
 	<core>
 		<name>squirreljme_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\squirreljme_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\squirreljme_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>stella2014_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\stella2014_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\stella2014_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>atari2600</platform>
 	</core>
 	<core>
 		<name>stella_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\stella_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\stella_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<default>1</default>
+		<platform>atari2600</platform>
 	</core>
 	<core>
 		<name>test_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\test_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\test_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>tgbdual_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\tgbdual_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\tgbdual_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>theodore_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\theodore_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\theodore_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>thepowdertoy_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\thepowdertoy_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\thepowdertoy_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>tic80_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\tic80_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\tic80_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>tyrquake_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\tyrquake_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\tyrquake_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>ume2015_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\ume2015_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\ume2015_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>vba_next_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vba_next_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vba_next_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>gba</platform>
 	</core>
 	<core>
 		<name>vbam_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vbam_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vbam_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>gba</platform>
 	</core>
 	<core>
 		<name>vecx_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vecx_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vecx_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>vectrex</platform>
 	</core>
 	<core>
 		<name>vemulator_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vemulator_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vemulator_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>vice_x64_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vice_x64_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vice_x64_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>c64</platform>
 	</core>
 	<core>
 		<name>vice_x64sc_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vice_x64sc_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vice_x64sc_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>c64</platform>
 	</core>
 	<core>
 		<name>vice_x128_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vice_x128_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vice_x128_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>c64</platform>
 	</core>
 	<core>
 		<name>vice_xpet_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vice_xpet_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vice_xpet_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>c64</platform>
 	</core>
 	<core>
 		<name>vice_xplus4_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vice_xplus4_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vice_xplus4_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>c64</platform>
 	</core>
 	<core>
 		<name>vice_xvic_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vice_xvic_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vice_xvic_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>c64</platform>
 	</core>
 	<core>
 		<name>virtualjaguar_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\virtualjaguar_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\virtualjaguar_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>jaguar</platform>
 	</core>
 	<core>
 		<name>vitaquake2_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vitaquake2_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vitaquake2_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>quake2</platform>
 	</core>
 	<core>
 		<name>vitaquake3_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vitaquake3_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vitaquake3_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>quake3</platform>
 	</core>
 	<core>
 		<name>vitavoyager_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\vitavoyager_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\vitavoyager_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>xrick_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\xrick_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\xrick_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>yabasanshiro_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\yabasanshiro_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\yabasanshiro_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
 	<core>
 		<name>yabause_libretro</name>
-		<command>"{path}\{exe}" -L "{path}\names\yabause_libretro.dll" %ROM%</command>
+		<command>"{path}\{exe}" -L "{path}\cores\yabause_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>saturn</platform>
 	</core>
 	<core>
 		<command>{path}\{exe} -config nullDC:Emulator.Autostart=1 -config ImageReader:LoadDefaultImage=1 -config ImageReader:DefaultImage=%ROM% -config nullDC_GUI:Fullscreen=1</command>

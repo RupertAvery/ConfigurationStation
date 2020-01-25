@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -41,6 +42,8 @@ namespace ConfigurationStation.WPF
         private string _appPath;
 
         private Dictionary<string, GameSystem> _gameSystems;
+        private Dictionary<string, string> _extensions;
+        private ILookup<string, RetroArchCore> _cores;
 
 
         public MainWindow()
@@ -58,7 +61,8 @@ namespace ConfigurationStation.WPF
             _retroArchConfiguration = new RetroArchConfiguration(_retroArchPath, @"%APPDATA%\RetroArch");
             _emulationStationConfiguration = new EmulationStationConfiguration(_emulationStationPath);
 
-
+            _extensions = _emulationStationConfiguration.GetExtensions(Path.Combine(_appPath, "Resources\\extensions.xml")).ToDictionary(x => x.Platform, x => x.Extension);
+            _cores = _retroArchConfiguration.GetCores(Path.Combine(_appPath, "Resources\\cores.xml")).Where(x => !string.IsNullOrEmpty(x.Platform)).ToLookup(x => x.Platform);
 
             _systems = _emulationStationConfiguration.GetPlatforms(Path.Combine(_appPath, "Resources\\platforms.xml")).Select(x => new SystemSelected() { System = x.Fullname, Platform = x.Name }).ToList();
 
@@ -92,19 +96,48 @@ namespace ConfigurationStation.WPF
 
             _romsPage.Controller.OnGenerateCommand = () =>
             {
+
                 var systems = _romsPage.Model.GameSystems.Select(system => new GameSystem()
                 {
                     Name = system.Platform,
                     Fullname = system.Fullname,
+                    Path = system.Path,
                     Extension = system.Extension,
                     Theme = system.Platform,
                     Platform = system.Platform,
-                    Command  = system.CommandTemplate?.Replace("{exe}", "retroarch.exe").Replace("{path}", _retroArchPath)
+                    Command = $"\"{system.CommandTemplate?.Replace("{exe}", "retroarch.exe").Replace("{path}", _retroArchPath)}\""
                 }).ToList();
 
                 var config = _emulationStationConfiguration.BuildConfig(systems);
 
                 File.WriteAllText(_emulationStationConfiguration.ConfigFilePath, config);
+
+                foreach (var system in _romsPage.Model.GameSystems)
+                {
+                    var platFormcores = _cores.FirstOrDefault(x => x.Key == system.Platform);
+                    var core = platFormcores?.FirstOrDefault(x => x.Default);
+                    if (core != null)
+                    {
+                        Task.Run(async () =>
+                        {
+                            var client = HttpClientFactory.Create();
+                            var result = await client.GetAsync($"https://buildbot.libretro.com/nightly/windows/x86_64/latest/{core.Name}.dll.zip");
+                            var coreFile = Path.Combine(_retroArchPath, "cores", $"{core.Name}.dll");
+                            if (true || !File.Exists(coreFile))
+                            {
+                                using (var stream = new FileStream(coreFile, FileMode.Create, FileAccess.Write))
+                                {
+                                    var data = await result.Content.ReadAsStreamAsync();
+                                    await data.CopyToAsync(stream);
+                                    stream.Flush();
+                                }
+                            }
+                        });
+                    }
+
+                }
+
+
             };
 
             ShowRootFolders();
@@ -145,15 +178,13 @@ namespace ConfigurationStation.WPF
 
         private List<GameSystem> BuildSystems(IEnumerable<SystemSelected> systems)
         {
-            var extensions = _emulationStationConfiguration.GetExtensions(Path.Combine(_appPath, "Resources\\extensions.xml")).ToDictionary(x => x.Platform, x => x.Extension);
-            var cores = _retroArchConfiguration.GetCores(Path.Combine(_appPath, "Resources\\cores.xml")).Where(x => !string.IsNullOrEmpty(x.Platform)).ToLookup(x => x.Platform);
 
             var _systems = new List<GameSystem>();
 
             foreach (var system in systems.Where(x => x.Selected))
             {
-                extensions.TryGetValue(system.Platform, out string extension);
-                var coreGroup = cores.FirstOrDefault(x => x.Key == system.Platform);
+                _extensions.TryGetValue(system.Platform, out string extension);
+                var coreGroup = _cores.FirstOrDefault(x => x.Key == system.Platform);
                 var core = coreGroup?.FirstOrDefault(x => x.Default);
 
                 if (_gameSystems.TryGetValue(system.Platform, out GameSystem gameSystem))

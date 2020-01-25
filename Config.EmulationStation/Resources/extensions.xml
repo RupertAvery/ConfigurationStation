@@ -29,7 +29,7 @@
 		<platform>saturn</platform>
 	</system>
 	<system>
-		<extension>.cue .CUE .bin .BIN .pbp .PBP .7z .7Z .img .IMG</extension>
+		<extension>.cue .CUE .bin .BIN .pbp .PBP .7z .7Z .img .IMG .iso .ISO</extension>
 		<platform>psx</platform>
 	</system>
 	<system>

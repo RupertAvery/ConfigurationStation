@@ -92,6 +92,7 @@ namespace ConfigurationStation.WPF.Controllers
                 Platform = x.Platform,
                 Theme = x.Theme
             }));
+            UpdateCanGenerate();
         }
 
 

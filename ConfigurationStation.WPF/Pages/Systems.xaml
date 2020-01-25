@@ -16,7 +16,7 @@
             <RowDefinition Height="33"/>
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Content="{Binding Message}" HorizontalAlignment="Left"/>
-        <ListBox Grid.Row="1" ItemsSource="{Binding SelectedSystems}">
+        <ListBox Margin="10,10,10,10"  Grid.Row="1" ItemsSource="{Binding SelectedSystems}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <CheckBox IsChecked="{Binding Selected}" Content="{Binding System}" Margin="10,0,0,0"/>
