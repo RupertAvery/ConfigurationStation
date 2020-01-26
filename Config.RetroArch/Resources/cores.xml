@@ -322,32 +322,69 @@
 		<name>gambatte_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\gambatte_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform>gb</platform>
+    <default>1</default>
+    <platform>gb</platform>
 	</core>
 	<core>
 		<name>gambatte_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\gambatte_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
+    <default>1</default>
 		<platform>gbc</platform>
 	</core>
-	<core>
+  <core>
+    <name>gearboy_libretro</name>
+    <command>"{path}\{exe}" -L "{path}\cores\gearboy_libretro.dll" %ROM%</command>
+    <emulator>retroarch</emulator>
+    <platform>gb</platform>
+  </core>
+  <core>
 		<name>gearboy_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\gearboy_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
-	</core>
+    <platform>gbc</platform>
+  </core>
 	<core>
 		<name>gearcore_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\gearcore_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
 		<platform></platform>
 	</core>
-	<core>
+  <core>
+    <name>genesis_plus_gx_libretro</name>
+    <command>"{path}\{exe}" -L "{path}\cores\genesis_plus_gx_libretro.dll" %ROM%</command>
+    <emulator>retroarch</emulator>
+    <default>1</default>
+    <platform>gamegear</platform>
+  </core>
+  <core>
 		<name>genesis_plus_gx_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\genesis_plus_gx_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+    <default>1</default>
+    <platform>mastersystem</platform>
 	</core>
+  <core>
+    <name>genesis_plus_gx_libretro</name>
+    <command>"{path}\{exe}" -L "{path}\cores\genesis_plus_gx_libretro.dll" %ROM%</command>
+    <emulator>retroarch</emulator>
+    <default>1</default>
+    <platform>megadrive</platform>
+  </core>
+  <core>
+    <name>genesis_plus_gx_libretro</name>
+    <command>"{path}\{exe}" -L "{path}\cores\genesis_plus_gx_libretro.dll" %ROM%</command>
+    <emulator>retroarch</emulator>
+    <default>1</default>
+    <platform>segacd</platform>
+  </core>
+  <core>
+    <name>genesis_plus_gx_libretro</name>
+    <command>"{path}\{exe}" -L "{path}\cores\genesis_plus_gx_libretro.dll" %ROM%</command>
+    <emulator>retroarch</emulator>
+    <default>1</default>
+    <platform>sega32x</platform>
+  </core>  
 	<core>
 		<name>gme_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\gme_libretro.dll" %ROM%</command>
@@ -358,6 +395,7 @@
 		<name>gpsp_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\gpsp_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
+    <default>1</default>
 		<platform>gba</platform>
 	</core>
 	<core>
@@ -600,7 +638,7 @@
 		<name>nestopia_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\nestopia_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+		<platform>nes</platform>
 	</core>
 	<core>
 		<name>np2kai_libretro</name>
@@ -640,13 +678,31 @@
 		<default>1</default>
 		<platform>psx</platform>
 	</core>
-	<core>
+  <core>
+    <name>picodrive_libretro</name>
+    <command>"{path}\{exe}" -L "{path}\cores\picodrive_libretro.dll" %ROM%</command>
+    <emulator>retroarch</emulator>
+    <platform>mastersystem</platform>
+  </core>
+  <core>
 		<name>picodrive_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\picodrive_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>
-		<platform></platform>
+    <platform>megadrive</platform>
 	</core>
-	<core>
+  <core>
+    <name>picodrive_libretro</name>
+    <command>"{path}\{exe}" -L "{path}\cores\picodrive_libretro.dll" %ROM%</command>
+    <emulator>retroarch</emulator>
+    <platform>sega32x</platform>
+  </core>
+  <core>
+    <name>picodrive_libretro</name>
+    <command>"{path}\{exe}" -L "{path}\cores\picodrive_libretro.dll" %ROM%</command>
+    <emulator>retroarch</emulator>
+    <platform>segacd</platform>
+  </core>
+  <core>
 		<name>play_libretro</name>
 		<command>"{path}\{exe}" -L "{path}\cores\play_libretro.dll" %ROM%</command>
 		<emulator>retroarch</emulator>

@@ -1,6 +1,8 @@
 ﻿using ConfigurationStation.WPF.Models;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using System;
+using System.IO;
+using System.Windows;
 
 namespace ConfigurationStation.WPF.Controllers
 {
@@ -9,6 +11,7 @@ namespace ConfigurationStation.WPF.Controllers
         private RootFoldersModel _rootFolderModel;
         private CommonOpenFileDialog dlg = new CommonOpenFileDialog();
         public Action OnSelectSystems { get; set; }
+        public Func<object, object> FindResource { get; internal set; }
 
         public RootFolderController(RootFoldersModel rootFolderModel)
         {
@@ -16,13 +19,13 @@ namespace ConfigurationStation.WPF.Controllers
             _rootFolderModel.BrowseEmulationStationCommand = new RelayCommand(BrowseES);
             _rootFolderModel.BrowseRetroArchCommand = new RelayCommand(BrowseRA);
             _rootFolderModel.SelectSystems = new RelayCommand(SelectSystems);
-            _rootFolderModel.Message = "One or more folders could not be found. You may need to install EmulationStation and/or RetroArch. If you have already done so, please point the paths below to their correct locations";
+            _rootFolderModel.Message = "ConfigurationStation needs the following paths to be set";
             _rootFolderModel.PropertyChanged += Model_PropertyChanged;
         }
 
         private void Model_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            if(e.PropertyName == nameof(RootFoldersModel.EmulationStationPath) || e.PropertyName == nameof(RootFoldersModel.RetroArchPath))
+            if (e.PropertyName == nameof(RootFoldersModel.EmulationStationPath) || e.PropertyName == nameof(RootFoldersModel.RetroArchPath))
             {
                 UpdateCanContinue();
             }
@@ -37,20 +40,13 @@ namespace ConfigurationStation.WPF.Controllers
         {
             _rootFolderModel.EmulationStationPath = emulationStationPath;
             _rootFolderModel.RetroArchPath = retroArchPath;
-            if (string.IsNullOrEmpty(emulationStationPath) || string.IsNullOrEmpty(retroArchPath))
-            {
-                _rootFolderModel.Message = "One or more folders could not be found. You may need to install EmulationStation and/or RetroArch. If you have already done so, please point the paths below to their correct locations";
-            }
-            else
-            {
-                _rootFolderModel.Message = "EmulationStation and RetroArch were found at the locations below. If this is correct, proceed with selecting your systems";
-            }
+
             UpdateCanContinue();
         }
 
         private void BrowseRA(object obj)
         {
-            var result = ShowFolderDialog("Select folder for EmulationStation", _rootFolderModel.RetroArchPath);
+            var result = ShowFolderDialog("Select folder for RetroArch", _rootFolderModel.RetroArchPath);
             if (result == CommonFileDialogResult.Ok)
             {
                 _rootFolderModel.RetroArchPath = dlg.FileName;
@@ -70,7 +66,58 @@ namespace ConfigurationStation.WPF.Controllers
 
         public void UpdateCanContinue()
         {
-            _rootFolderModel.CanContinue = !string.IsNullOrEmpty(_rootFolderModel.EmulationStationPath) && !string.IsNullOrEmpty(_rootFolderModel.RetroArchPath);
+            var esFolderExists =
+                !string.IsNullOrEmpty(_rootFolderModel.EmulationStationPath) &&
+                Directory.Exists(_rootFolderModel.EmulationStationPath);
+
+            var esFilesExist = esFolderExists &&
+                File.Exists(Path.Combine(_rootFolderModel.EmulationStationPath, "es_systems.cfg")) ||
+                File.Exists(Path.Combine(_rootFolderModel.EmulationStationPath, "es_settings.cfg"));
+
+            var raFolderExists =
+                !string.IsNullOrEmpty(_rootFolderModel.RetroArchPath) &&
+                Directory.Exists(_rootFolderModel.RetroArchPath);
+
+            var raFilesExist = raFolderExists &&
+                File.Exists(Path.Combine(_rootFolderModel.RetroArchPath, "retroarch.exe"));
+
+            _rootFolderModel.CanContinue =
+                (esFolderExists && esFilesExist) &&
+                (raFolderExists && raFilesExist);
+
+            if (_rootFolderModel.CanContinue)
+            {
+                _rootFolderModel.ESStyle = (Style)FindResource("CheckStyle");
+                _rootFolderModel.ESMessage = "EmulationStation was found";
+
+                _rootFolderModel.RAStyle = (Style)FindResource("CheckStyle");
+                _rootFolderModel.RAMessage = "RetroArch was found";
+            }
+            else
+            {
+                if (!esFolderExists)
+                {
+                    _rootFolderModel.ESStyle = (Style)FindResource("XStyle");
+                    _rootFolderModel.ESMessage = "EmulationStation folder  was  not found!";
+                }
+                else if (!esFilesExist)
+                {
+                    _rootFolderModel.ESStyle = (Style)FindResource("XStyle");
+                    _rootFolderModel.ESMessage = "es__systems.cfg was not found!";
+                }
+
+                if (!raFolderExists)
+                {
+                    _rootFolderModel.RAStyle = (Style)FindResource("XStyle");
+                    _rootFolderModel.RAMessage = "RetroArch folder was not found!";
+                }
+                else if (!raFilesExist)
+                {
+                    _rootFolderModel.RAStyle = (Style)FindResource("XStyle");
+                    _rootFolderModel.RAMessage = "retroarch.exe was not found!";
+                }
+
+            }
         }
 
         private CommonFileDialogResult ShowFolderDialog(string title, string currentDirectory)

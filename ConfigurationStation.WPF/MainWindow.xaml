@@ -4,7 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ConfigurationStation.WPF"
+        Background="{x:Static SystemColors.ControlBrush}"
         mc:Ignorable="d"
+        ResizeMode="CanMinimize"
         Title="ConfigurationStation" Height="450" Width="800">
     <Grid>
         <Frame x:Name="Frame" NavigationUIVisibility="Hidden"></Frame>

@@ -8,6 +8,26 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="RootFolders">
+    <Page.Resources>
+        <Style x:Key="XStyle" TargetType="Path">
+            <Setter>
+                <Setter.Property>Fill</Setter.Property>
+                <Setter.Value>
+                    <SolidColorBrush Color="Red"></SolidColorBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Data" Value="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849 z"/>
+        </Style>
+        <Style x:Key="CheckStyle" TargetType="Path">
+            <Setter>
+                <Setter.Property>Fill</Setter.Property>
+                <Setter.Value>
+                    <SolidColorBrush Color="Green"></SolidColorBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Data" Value="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/>
+        </Style>
+    </Page.Resources>
 
     <Grid DataContext="{Binding Model}">
         <Grid.RowDefinitions>
@@ -19,19 +39,45 @@
         </Grid.RowDefinitions>
         <Label Margin="10,0,0,0" Grid.Row="0" Content="{Binding Message}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <StackPanel Margin="10,0,0,0" Grid.Row="1" Orientation="Vertical">
-            <Label x:Name="label1" Content="EmulationStation" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="Folder containing es__systems.cfg (EmulationStation)" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <StackPanel Orientation="Horizontal">
                 <TextBox x:Name="EmulationStationPathTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding EmulationStationPath, UpdateSourceTrigger=PropertyChanged}"  VerticalAlignment="Top" Width="362"/>
                 <Button Content="Browse" Height="23" Margin="10,0,0,0" Command="{Binding BrowseEmulationStationCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
             </StackPanel>
         </StackPanel>
         <StackPanel Margin="10,0,0,0" Grid.Row="2" Orientation="Vertical">
-            <Label Content="RetroArch" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="Folder containing retroarch.exe (RetroArch)" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <StackPanel Orientation="Horizontal">
                 <TextBox x:Name="RetroArchPathTextBox"  HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="{Binding RetroArchPath, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="362"/>
                 <Button Content="Browse" Height="23" Margin="10,0,0,0" Command="{Binding BrowseRetroArchCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
             </StackPanel>
         </StackPanel>
         <Button Grid.Row="4" IsEnabled="{Binding CanContinue}" Content="Select Systems" Height="23" Width="100" Command="{Binding SelectSystems}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
+        <StackPanel Margin="10,10,0,0" Grid.Row="3" Orientation="Vertical">
+            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                <Path Width="24" Height="24" Margin="6,0,0,0" Style="{Binding ESStyle}"/>
+                <Label Margin="10,0,0,0" Content="{Binding ESMessage}"></Label>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                <Path Width="24" Height="24" Margin="6,0,0,0" Style="{Binding RAStyle}"/>
+                <Label Margin="10,0,0,0" Content="{Binding RAMessage}"></Label>
+            </StackPanel>
+            <!--<StackPanel Visibility="{Binding HasES}" Margin="0,10,0,0" Orientation="Horizontal">
+                <Path Width="24" Height="24" Margin="6,0,0,0" Style="{StaticResource XStyle}"/>
+                <Label Margin="10,0,0,0" Content="es__systems.cfg not found"></Label>
+            </StackPanel>
+            <StackPanel Visibility="{Binding HasES}" Margin="0,10,0,0" Orientation="Horizontal">
+                <Path Width="24" Height="24" Margin="6,0,0,0" Style="{StaticResource CheckStyle}"/>
+                <Label Margin="10,0,0,0" Content="es__systems.cfg found"></Label>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                <Path Width="24" Height="24" Margin="6,0,0,0" Style="{StaticResource XStyle}"/>
+                <Label Margin="10,0,0,0" Content="retroarch.exe not found"></Label>
+            </StackPanel>
+            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                <Path Width="24" Height="24" Margin="6,0,0,0" Style="{StaticResource CheckStyle}"/>
+                <Label Margin="10,0,0,0" Content="retroarch.exe found"></Label>
+            </StackPanel>-->
+        </StackPanel>
     </Grid>
 </Page>

@@ -51,7 +51,7 @@ namespace ConfigurationStation.WPF.Models
     {
         private string romPath;
         private ICommand systemsCommand;
-        private ICommand generateConfigCommand;
+        private ICommand optionsCommand;
         private ICommand browseFolderCommand;
         private bool canGenerate;
         private ObservableCollection<GameSystemModel> gameSystems;
@@ -65,7 +65,7 @@ namespace ConfigurationStation.WPF.Models
 
         public bool CanGenerate { get => canGenerate; set { canGenerate = value; OnPropertyChanged(); } }
         public ICommand SystemsCommand { get => systemsCommand; set { systemsCommand = value; OnPropertyChanged(); } }
-        public ICommand GenerateConfigCommand { get => generateConfigCommand; set { generateConfigCommand = value; OnPropertyChanged(); } }
+        public ICommand OptionsCommand { get => optionsCommand; set { optionsCommand = value; OnPropertyChanged(); } }
         public ICommand BrowseFolderCommand { get => browseFolderCommand; set { browseFolderCommand = value; OnPropertyChanged(); } }
 
         public string RomPath { get => romPath; set { romPath = value; OnPropertyChanged(); } }

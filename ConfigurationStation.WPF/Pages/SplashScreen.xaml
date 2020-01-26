@@ -9,6 +9,7 @@
       Title="SplashScreen">
 
     <Grid>
-        
+        <TextBlock FontSize="120"  TextWrapping="Wrap" Margin="210,104,465,146">cs</TextBlock>
+        <TextBlock FontSize="42" TextWrapping="Wrap" Margin="350,144,116,146">configuration station</TextBlock>
     </Grid>
 </Page>

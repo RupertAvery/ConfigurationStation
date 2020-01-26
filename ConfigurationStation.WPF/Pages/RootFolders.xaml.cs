@@ -16,6 +16,7 @@ namespace ConfigurationStation.WPF.Pages
         {
             Model = new RootFoldersModel();
             Controller = new RootFolderController(Model);
+            Controller.FindResource = FindResource;
             InitializeComponent();
         }
 

@@ -15,20 +15,20 @@ namespace ConfigurationStation.WPF.Controllers
         private CommonOpenFileDialog dlg = new CommonOpenFileDialog();
         private RomsModel _romsModel;
         public Action OnSystemsCommand { get; set; }
-        public Action OnGenerateCommand { get; set; }
+        public Action OnOptionsCommand { get; set; }
         public RomsController(RomsModel romsModel)
         {
             _romsModel = romsModel;
             _romsModel.IsESPath = true;
             _romsModel.SystemsCommand = new RelayCommand(SystemsCommand);
-            _romsModel.GenerateConfigCommand = new RelayCommand(GenerateConfigCommand);
+            _romsModel.OptionsCommand = new RelayCommand(OptionsCommand);
             _romsModel.BrowseFolderCommand = new RelayCommand(BrowseFolderCommand);
             _romsModel.PropertyChanged += Model_PropertyChanged;
         }
 
         private void BrowseFolderCommand(object obj)
         {
-            var result = ShowFolderDialog("Select folder for EmulationStation", _romsModel.RomPath);
+            var result = ShowFolderDialog("Select folder for roms", _romsModel.RomPath);
             if (result == CommonFileDialogResult.Ok)
             {
                 _romsModel.RomPath = dlg.FileName;
@@ -57,9 +57,9 @@ namespace ConfigurationStation.WPF.Controllers
             _romsModel.CanGenerate = isEnabled;
         }
 
-        private void GenerateConfigCommand(object obj)
+        private void OptionsCommand(object obj)
         {
-            OnGenerateCommand?.Invoke();
+            OnOptionsCommand?.Invoke();
         }
 
         private void Model_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)

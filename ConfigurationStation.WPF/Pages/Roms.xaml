@@ -17,13 +17,13 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="33"/>
         </Grid.RowDefinitions>
-        <RadioButton Grid.Row="0" IsChecked="{Binding IsESpath}" Content="Use a common path and append EmulationStation platforms" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
+        <RadioButton Grid.Row="0" IsChecked="{Binding IsESPath}" Content="Use a common path and append EmulationStation platforms" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
         <RadioButton Grid.Row="1" IsChecked="{Binding IsCustomPath}" Content="Use custom paths for each system" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
         <StackPanel Grid.Row="2" Orientation="Horizontal">
             <!--<TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding RomPath}" VerticalAlignment="Top" Width="433"/>-->
             <Button Content="Browse" Command="{Binding BrowseFolderCommand}" Height="23" Width="65" Margin="10,0,0,0"/>
         </StackPanel>
-        <ListView Grid.Row="3" ItemsSource="{Binding GameSystems}" SelectedItem="{Binding SelectedSystem, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Margin="10,10,10,10" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+        <ListView Grid.Row="3" ItemsSource="{Binding GameSystems}" SelectedItem="{Binding SelectedSystem, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,10">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Full Name" Width="200" DisplayMemberBinding="{Binding Fullname}" />
@@ -36,8 +36,8 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="Systems" Command="{Binding SystemsCommand}" Height="23" Width="80" Margin="10,0,0,0" HorizontalAlignment="Left"/>
-            <Button Grid.Column="1" Content="Gennerate Configuration" Command="{Binding GenerateConfigCommand}" IsEnabled="{Binding CanGenerate}" Height="23" Width="160" Margin="0,0,10,0" HorizontalAlignment="Right"/>
+            <Button Grid.Column="0" Content="Systems" Command="{Binding SystemsCommand}" Height="23" Width="100" Margin="10,0,0,0" HorizontalAlignment="Left"/>
+            <Button Grid.Column="1" Content="Options" Command="{Binding OptionsCommand}" IsEnabled="{Binding CanGenerate}" Height="23" Width="100" Margin="0,0,10,0" HorizontalAlignment="Right"/>
         </Grid>
     </Grid>
 </Page>
