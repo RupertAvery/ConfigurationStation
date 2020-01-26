@@ -9,7 +9,7 @@ You must have installed EmulationStation and RetroArch before running Configurat
 # Usage
 
 ConfigurationStation will look for your `%USERPROFILE%\.emulationstation` folder and `%APPDATA%\RetroArch`. 
-It will verify that there is a `es_systems.cfg` and a `retroarch.exe` in the respective folders before you are allowed to proceed.
+It will verify that the folders exist and `retroarch.exe` in the respective folder before you are allowed to proceed.
 
 * Select systems you want to be available for EmulationStation. 
 * Select the folders where the ROMs can be found.
@@ -26,7 +26,7 @@ It will download the correct version (32-bit or 64-bit) by checking the version 
 
 ConfigurationStation can download  http://github.com/hrydgard/ppsspp/archive/master.zip and extract 
 the contents of `ppsspp-master/assets` into  `RetroArch\system\PPSSPP`. This is needed for MemoryStick 
-dialogs to work for the libretro core.
+dialogs to work for the ppsspp_libretro core.
 
 # TODO
 
