@@ -70,10 +70,6 @@ namespace ConfigurationStation.WPF.Controllers
                 !string.IsNullOrEmpty(_rootFolderModel.EmulationStationPath) &&
                 Directory.Exists(_rootFolderModel.EmulationStationPath);
 
-            var esFilesExist = esFolderExists &&
-                File.Exists(Path.Combine(_rootFolderModel.EmulationStationPath, "es_systems.cfg")) ||
-                File.Exists(Path.Combine(_rootFolderModel.EmulationStationPath, "es_settings.cfg"));
-
             var raFolderExists =
                 !string.IsNullOrEmpty(_rootFolderModel.RetroArchPath) &&
                 Directory.Exists(_rootFolderModel.RetroArchPath);
@@ -82,8 +78,9 @@ namespace ConfigurationStation.WPF.Controllers
                 File.Exists(Path.Combine(_rootFolderModel.RetroArchPath, "retroarch.exe"));
 
             _rootFolderModel.CanContinue =
-                (esFolderExists && esFilesExist) &&
+                esFolderExists &&
                 (raFolderExists && raFilesExist);
+
 
             if (_rootFolderModel.CanContinue)
             {
@@ -100,10 +97,10 @@ namespace ConfigurationStation.WPF.Controllers
                     _rootFolderModel.ESStyle = (Style)FindResource("XStyle");
                     _rootFolderModel.ESMessage = "EmulationStation folder  was  not found!";
                 }
-                else if (!esFilesExist)
+                else
                 {
-                    _rootFolderModel.ESStyle = (Style)FindResource("XStyle");
-                    _rootFolderModel.ESMessage = "es__systems.cfg was not found!";
+                    _rootFolderModel.ESStyle = (Style)FindResource("CheckStyle");
+                    _rootFolderModel.ESMessage = "EmulationStation was found";
                 }
 
                 if (!raFolderExists)
@@ -115,6 +112,11 @@ namespace ConfigurationStation.WPF.Controllers
                 {
                     _rootFolderModel.RAStyle = (Style)FindResource("XStyle");
                     _rootFolderModel.RAMessage = "retroarch.exe was not found!";
+                }
+                else
+                {
+                    _rootFolderModel.RAStyle = (Style)FindResource("CheckStyle");
+                    _rootFolderModel.RAMessage = "RetroArch was found";
                 }
 
             }
